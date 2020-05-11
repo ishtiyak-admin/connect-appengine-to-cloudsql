@@ -1,0 +1,10 @@
+# Use the PHP 7.3 runtime (BETA) by replacing "php72" below with "php73"
+runtime: php72
+ 
+env_variables:
+  # Replace USER, PASSWORD, DATABASE, and CONNECTION_NAME with the
+  # values obtained when configuring your Cloud SQL instance.
+  CLOUDSQL_USER: ishtiyak
+  CLOUDSQL_PASSWORD: admin123
+  CLOUDSQL_DSN: "mysql:dbname=<strong>mydemodatabase</strong>;unix_socket=/cloudsql/<strong>mysql-php-test-2020:asia-south1:testsql1</strong>"
+# [END gae_cloudsql_mysql_env]
